@@ -200,7 +200,7 @@ class ExJiraIssue(Issue):
 
 class ExJiraService(IssueService):
     ISSUE_CLASS = ExJiraIssue
-    CONFIG_PREFIX = 'ex-jira'
+    CONFIG_PREFIX = 'jira'
 
     def __init__(self, *args, **kw):
         super(ExJiraService, self).__init__(*args, **kw)
