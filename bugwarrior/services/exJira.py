@@ -219,6 +219,7 @@ class ExJiraService(IssueService):
         self.import_labels_as_tags = self.config.get('import_labels_as_tags', default=False, to_type=asbool)
         self.import_sprints_as_tags = self.config.get('import_sprints_as_tags', default=False, to_type=asbool)
         self.label_template = self.config.get('label_template', default='{{label}}', to_type=six.text_type)
+        self.annotation_links = self.config.get('annotation_links', default=False, to_type=asbool)
         self.lower = self.config.get('lower', default=False, to_type=asbool)
 
         self.sprint_field_names = []
